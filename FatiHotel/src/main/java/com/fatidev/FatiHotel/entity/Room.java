@@ -20,6 +20,7 @@ public class Room {
     private BigDecimal roomPrice;
     private String roomPhotoUrl ;
     private String roomDescription ;
+    @OneToMany(mappedBy = "room")
     private List<Booking> bookings = new ArrayList<>();
 
     @Override
